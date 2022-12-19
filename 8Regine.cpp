@@ -19,17 +19,25 @@ int valid(int k)
 void tipar(int k)
 {
 	nr_sol++; 
-	cout << "solutia" << nr_sol << ": ";
-	for (int i = 1; i <= k; i++)
+	cout << "Solutia cu numarul" << nr_sol << ": "; cout << endl;
+	cout << "-";
+	for (int i = 1; i <= n; i++)
+		cout << "--";
+	cout << "-\n";
+	for (int i = 1; i <= n; i++)
 	{
-		for (int j = 1; j <= k; j++)
-			if (st[i] == j)
-				cout << "D";
-			else
-				cout <<" ";
-		cout << endl;
+		cout << "|";
+		for (int j = 1; j <= n; j++)
+			if (st[j] == i) cout << "DD"; else cout << "  ";
+		cout << "|\n";
 	}
-	cout << endl;
+	cout << "-";
+	for (int 
+		
+		i = 1; i <= n; i++)
+		cout << "--";
+	cout << "-\n";
+
 }
 
 void back()
@@ -59,7 +67,7 @@ int main()
 {
 	do
 	{ 
-		cout << "n= "; 
+		cout << "Dati numarul de dame de pe tabla de sah= "; 
 	    cin >> n; 
 	} while (n <= 3);
 	back();
